@@ -15,9 +15,6 @@ class Student extends Controller{
     public function index(){
         $db1 = \Config\Database::connect();
         $db2 = \Config\Database::connect('development');
-
-        // var_dump($db1->query('select * from students_mst')->getRowArray());
-        // var_dump($db2->query('select * from user_info')->getRowArray());
         
         $data['session'] = $this->session;
         $data['title'] = 'Students Detail';
